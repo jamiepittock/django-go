@@ -1,0 +1,11 @@
+!.gitignore
+
+.sass-cache
+*.pyc
+*.swp
+
+wsgi_handler.py
+local_settings.py
+
+media/*
+static_collected/*
