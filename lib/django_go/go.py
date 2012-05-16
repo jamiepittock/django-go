@@ -49,7 +49,8 @@ def generate_secret_key(length=50):
     """ Generates a simple secret key of variable length """
 
     chars = letters + digits + punctuation
-    return ''.join(choice(chars) for _ in range(length)) # return password 
+    key = ''.join(choice(chars) for _ in range(length))
+    return key.replace('\'', '') # return safe key
 
 def validate_templates(items, includes):
     """ Validate template listing """
